@@ -1,25 +1,129 @@
+/* Fira Sans Regular */
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Regular.eot');
+    src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+/* Fira Sans Italic */
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Italic.eot');
+    src: url('fonts/fira/eot/FiraSans-Italic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Italic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Italic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;  
+}
+
+/* Fira Sans Bold */
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Bold.eot');
+    src: url('fonts/fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Bold.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;  
+}
+
+/* Fira Sans Bold Italic */
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-BoldItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-BoldItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;  
+}
+
+/* Fira Sans Thin */
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Thin.eot');
+    src: url('fonts/fira/eot/FiraSans-Thin.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Thin.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /* Fira Sans Thin Italic */
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-ThinItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-ThinItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-ThinItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-ThinItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  /* Fira Sans Light */
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Light.eot');
+    src: url('fonts/fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Light.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Light.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  /* Fira Sans Light Italic */
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-LightItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-LightItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+
 body {
-    margin: 0;
-    background-color: hsl(0, 0%, 100%);
+    margin: 0; /* left margin is zero*/
+    background-color: hsl(0, 0%, 100%); 
     color: hsl(0, 0%, 10%);
-    line-height: 1.5;
+    line-height: 1.5; /* Distance between lines*/
+    font-family: "Fira Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+    text-align: justify;
 }
 
 .content-width {
-    max-width: 70ch;
-    width: calc(100% - 4rem);
-    margin: 0 auto;
+    max-width: 70ch; /* Maximum width of the text in the page */
+    width: calc(100% - 4rem); /* Have not learned about this yet */
+    margin: 0 auto; /* Centers horizontally */
 }
 
 main {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; /* bottom of the page */
 }
 
 header {
     margin-bottom: 4 rem;
-    padding: 2rem 0;
+    padding: 2rem 0; /* Adds space around the element, in this case, in the bottom */
     background-color: hsl(280, 50%, 40%);
-    border-bottom: 4px solid hsl(300, 50%, 50%);
+    border-bottom: 4px solid hsl(300, 50%, 50%); /* Border line: thickness, type and color */
     color: hsl(300, 50%, 50%);
 }
 
@@ -34,4 +138,25 @@ h1, h2, h3 {
 
 h2, h3 {
     color: hsl(280, 50%, 40%);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    color:hsl(300, 50%, 85%)
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 200;;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+p {
+    font-size: 1.125rem;
 }
